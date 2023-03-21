@@ -1,0 +1,7 @@
+[workspace]
+members = ["contract", "client/named_key_session", "tests"]
+default-members = ["contract", "client/named_key_session", "tests"]
+
+[profile.release]
+codegen-units = 1
+lto = true
