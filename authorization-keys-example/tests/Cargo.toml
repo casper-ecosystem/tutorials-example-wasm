@@ -4,7 +4,6 @@ version = "0.1.0"
 edition = "2018"
 
 [dev-dependencies]
-casper-types = { git = "https://github.com/casper-network/casper-node", branch = "dev" }
-
-casper-engine-test-support = { git = "https://github.com/casper-network/casper-node", branch = "dev" }
-casper-execution-engine = { git = "https://github.com/casper-network/casper-node", branch = "dev" }
+casper-engine-test-support = "5.0.0"
+casper-execution-engine = "5.0.0"
+casper-types = "3.0.0"
