@@ -4,10 +4,10 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-casper-contract = { version = "1.4.4", git = "https://github.com/casper-network/casper-node", branch = "dev", features = [
+casper-contract = { git = "https://github.com/casper-network/casper-node", branch = "dev", features = [
   "test-support",
 ] }
-casper-types = { version = "1.5.0", git = "https://github.com/casper-network/casper-node", branch = "dev" }
+casper-types = { git = "https://github.com/casper-network/casper-node", branch = "dev" }
 
 [[bin]]
 name = "contract"
