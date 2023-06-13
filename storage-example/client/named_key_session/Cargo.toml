@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-casper-types = "1.5.0"
-casper-contract = { version = "1.4.4", features = ["test-support"] }
+casper-types = "3.0.0"
+casper-contract = { version = "3.0.0", features = ["test-support"] }
 
 [[bin]]
 name = "named_key_session"
