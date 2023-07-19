@@ -1,0 +1,15 @@
+[package]
+name = "update_associated_keys"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+casper-contract = "3.0.0"
+casper-types = "3.0.0"
+
+[[bin]]
+name = "update_associated_keys"
+path = "src/update_associated_keys.rs"
+bench = false
+doctest = false
+test = false

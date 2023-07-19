@@ -1,0 +1,29 @@
+[package]
+name = "tests"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+casper-types = "3.0.0"
+
+[dev-dependencies]
+casper-contract = { version = "3.0.0", default-features = false, features = [
+    "test-support",
+] }
+add_account = { path = "../contracts/add_account", default-features = false }
+remove_account = { path = "../contracts/remove_account", default-features = false }
+update_associated_keys = { path = "../contracts/update_associated_keys", default-features = false }
+update_thresholds = { path = "../contracts/update_thresholds", default-features = false }
+casper-engine-test-support = { version = "5.0.0", features = ["test-support"] }
+casper-execution-engine = "5.0.0"
+
+
+[[bin]]
+name = "integration-tests"
+path = "src/integration_tests.rs"
+bench = false
+doctest = false
+
+[features]
+default = ["std"]
+std = ["casper-contract/std"]
