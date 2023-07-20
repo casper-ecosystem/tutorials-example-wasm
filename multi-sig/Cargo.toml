@@ -1,0 +1,19 @@
+[workspace]
+members = [
+    "contracts/add_account",
+    "contracts/remove_account",
+    "contracts/update_associated_keys",
+    "contracts/update_thresholds",
+    "tests",
+]
+default-members = [
+    "contracts/add_account",
+    "contracts/remove_account",
+    "contracts/update_associated_keys",
+    "contracts/update_thresholds",
+    "tests",
+]
+
+[profile.release]
+codegen-units = 1
+lto = true

@@ -1,0 +1,15 @@
+[package]
+name = "remove_account"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+casper-contract = "3.0.0"
+casper-types = "3.0.0"
+
+[[bin]]
+name = "remove_account"
+path = "src/remove_account.rs"
+bench = false
+doctest = false
+test = false

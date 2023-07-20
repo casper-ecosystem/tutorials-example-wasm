@@ -1,0 +1,15 @@
+[package]
+name = "update_thresholds"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+casper-contract = "3.0.0"
+casper-types = "3.0.0"
+
+[[bin]]
+name = "update_thresholds"
+path = "src/update_thresholds.rs"
+bench = false
+doctest = false
+test = false
