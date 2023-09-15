@@ -77,7 +77,7 @@ The primary key in this account should now have weight 3.
 
 ## Step 4: Update the account's action thresholds
 
-Set up a multi-signature scheme for the account, by updating the `deployment` and `key_management` thresholds. The `update_thresholds.wasm` included will set `deployment` threshold to 2 and the `key_management` threshold to 3.
+Set up a multi-signature scheme for the account by updating the `deployment` and `key_management` thresholds. The `update_thresholds.wasm` will take two arguments and set the `deployment` threshold to 2 and the `key_management` threshold to 3.
 
 ### FOR EXAMPLE ONLY, PLEASE UPDATE PRIOR TO EXECUTING
 
@@ -169,11 +169,9 @@ The account would now have one primary key with weight 3, and two associated acc
 
 ## Step 6: Send a deploy from the primary account
 
-This example sends a deploy containing Wasm (`contract.wasm`), which adds a named key to the account. The source code for the Wasm comes from the [hello-world](https://github.com/casper-ecosystem/hello-world) repository. The deploy should succeed as the primary account has a weight of 3, which is greater than the deployment threshold.
+This step sends a deploy containing Wasm (`contract.wasm`), which adds a named key to the account. The source code for the Wasm comes from the [hello-world](https://github.com/casper-ecosystem/hello-world) repository. The deploy should succeed as the primary account has a weight of 3, which is greater than the deployment threshold.
 
 ### FOR EXAMPLE ONLY, PLEASE UPDATE PRIOR TO EXECUTING
-
-The first associated key creates and signs the deploy with the `make-deploy` command.
 
 ```bash
 casper-client put-deploy --chain-name casper-test \
@@ -226,7 +224,6 @@ The second associated key signs the deploy with `sign-deploy` to meet the deploy
 
 ```bash
 casper-client sign-deploy -i hello_world_one_signature -k $PATH/user_2_secret_key.pem  -o hello_world_two_signatures
-
 ```
 
 The deploy can be sent to the network using the `send-deploy` command:
