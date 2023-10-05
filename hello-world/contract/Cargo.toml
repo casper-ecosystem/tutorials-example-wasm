@@ -1,0 +1,16 @@
+[package]
+name = "contract"
+version = "0.1.0"
+authors = ["darthsiroftardis <karan@casperlabs.io>"]
+edition = "2018"
+
+[dependencies]
+casper-contract = "3.0.0"
+casper-types = "3.0.0"
+
+[[bin]]
+name = "contract"
+path = "src/main.rs"
+bench = false
+doctest = false
+test = false
