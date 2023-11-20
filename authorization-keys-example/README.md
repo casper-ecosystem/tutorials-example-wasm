@@ -1,4 +1,4 @@
-# authorization-keys-example
+# How to Use Authorization Keys
 
 This simple example demonstrates retrieving and using the authorization keys associated with a Deploy.
 
