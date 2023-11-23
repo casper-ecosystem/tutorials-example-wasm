@@ -1,4 +1,4 @@
-# authorization-keys-example
+# How to Use Authorization Keys
 
 This simple example demonstrates retrieving and using the authorization keys associated with a Deploy.
 
@@ -6,9 +6,7 @@ The contract code in this example retrieves the set of authorization keys for a 
 
 Upon installation, the contract code stores the authorization keys for the installer deploy into a NamedKey. The contract also contains an entry point that returns the intersection of the caller deploy's, and installer deploy's authorization keys. The tests in this repository verify different scenarios and check the resulting intersection.
 
-<!-- TODO point to the docs when the page is live. 
-Read the [Working with Authorization Keys](./tutorial/TUTORIAL.md) tutorial for additional information.
--->
+Read the [Working with Authorization Keys](https://docs.casper.network/resources/advanced/list-auth-keys-tutorial/) tutorial for additional information.
 
 ## Running the Example Code
 

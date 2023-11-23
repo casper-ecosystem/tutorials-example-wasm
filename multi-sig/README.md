@@ -1,11 +1,13 @@
 # Multi-signature Key Management on a Casper Network
 
->**DO NOT RUN THESE EXAMPLES ON MAINNET!** 
+>**PROCEED WITH CAUTION!** 
 >
 > Incorrect account configurations could render accounts defunct and unusable, thus losing access to all the account's CSPR.
 >
-> The session code provided in this repository SHOULD NOT be used in a production environment.
-> Test all account changes in a test environment like the Testnet.
+> Understanding the [multi-sig feature](https://docs.casper.network/resources/advanced/multi-sig/) and trying it out on Testnet before using it on Mainnet is essential.
+>
+> The session code provided in this repository SHOULD NOT be used directly in a production environment. The session code is provided as an example and needs to be modified and tested to fit your scenario.
+> 
 
 ## Introduction
 
@@ -292,7 +294,7 @@ casper-client put-deploy --node-address https://rpc.testnet.casperlabs.io/ \
 
 The `remove_account.wasm` will remove the newly added account to demonstrate the possibility of removing associated keys that may have been compromised.
 
-### REMOVE KEYS WITH CAUTION! DO NOT RUN THIS EXAMPLE ON MAINNET
+### REMOVE KEYS WITH CAUTION! TEST THIS FIRST ON THE TESTNET
 
 ```bash
 casper-client put-deploy --node-address https://rpc.testnet.casperlabs.io/ \
